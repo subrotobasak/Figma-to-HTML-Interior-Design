@@ -1,0 +1,643 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Basic CSS */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #646464;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #212121;
+}
+
+.section-heading h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #646464;
+    font-weight: 600;
+}
+
+.section-heading h3 {
+    font-size: 48px;
+}
+
+.design-text h5 {
+    font-family: 'Poppins', sans-serif;
+    ;
+    font-size: 288px;
+    font-weight: 700;
+    background-image: url(../images/text-bg.png);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+}
+
+.theme-button {
+    background-color: #37806b;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: 15px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.theme-button:hover {
+    background-color: #CAA892;
+    color: #ffffff;
+}
+
+.design-image {
+    position: relative;
+    z-index: 1;
+}
+
+.design-image img {
+    border-radius: 140px 0;
+    width: 100%;
+}
+
+.design-image::after {
+    position: absolute;
+    content: "";
+    right: -20px;
+    bottom: -20px;
+    left: 20px;
+    top: 20px;
+    z-index: -1;
+    border-radius: 140px 0;
+    border: 2px solid #b0855b;
+}
+
+.design-image-two {
+    position: relative;
+    z-index: 1;
+}
+
+.design-image-two img {
+    border-radius: 140px 0;
+    width: 100%;
+}
+
+.design-image-two::after {
+    position: absolute;
+    content: "";
+    right: 20px;
+    bottom: 20px;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+    border-radius: 140px 0;
+    border: 2px solid #b0855b;
+}
+
+
+
+/* Start Header Area CSS */
+.header-area {
+    padding: 30px 0;
+}
+
+.header-area .nav-item {
+    margin-left: 30px;
+}
+
+.header-area .nav-item:last-child {
+    margin-left: 45px;
+}
+
+.header-area .nav-link {
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 600;
+
+}
+
+.header-area .nav-link.active {
+    color: #646464;
+}
+
+.header-area .nav-item:last-child .nav-link {
+    background-color: #CAA892;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: 15px 0;
+    padding: 10px 20px;
+}
+
+/* End Header Area CSS */
+
+/* Start Hero Area CSS */
+.hero-area {
+    padding: 70px 0;
+}
+
+.hero-text h3 {
+    font-size: 20px;
+    color: #646464;
+    text-transform: uppercase;
+}
+
+.hero-text h2 {
+    font-size: 72px;
+    color: #646464;
+    text-transform: capitalize;
+}
+
+.hero-area a {
+    margin-top: 15px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 140px 0;
+}
+
+/* End Hero Area CSS */
+
+/* Start Service Area CSS */
+.service-area {
+    padding: 100px 0;
+    position: relative;
+}
+
+.all-services {
+    margin-top: 60px;
+    position: relative;
+
+}
+
+.service-area .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+}
+
+.service-area .owl-nav span {
+    height: 30px;
+    width: 30px;
+    color: #646464;
+    display: inline-block;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.service-area .owl-nav span:hover {
+    background-color: #37806b;
+    color: #ffffff;
+}
+
+.service-area .owl-next {
+    margin-left: 15px;
+}
+
+.single-service {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+    border-radius: 60px 0px;
+    padding: 40px 20px 40px 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.single-service:hover {
+    background-color: #CAA892;
+    color: #ffffff;
+
+}
+
+.single-service:hover h3 {
+    color: #ffffff;
+
+}
+
+.service-area .single-service-area {
+    padding: 15px;
+}
+
+.service-image {
+    margin-right: 20px;
+}
+
+.service-text p {
+    margin-bottom: 0;
+
+}
+
+/* End Service Area CSS */
+
+
+/* Start About Area CSS */
+.about-area {
+    padding: 100px 0;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.about-text {
+    padding-left: 55px;
+
+}
+
+/* End About Area CSS */
+
+/* Start Success Area CSS */
+.success-area {
+    padding: 100px 0;
+    position: relative;
+}
+
+.success-text {
+    padding-right: 55px;
+}
+
+.success-image img {
+    width: 100%;
+}
+
+.success-area .theme-button {
+    margin-top: 35px;
+}
+
+/* End Success Area CSS */
+
+/* Start Work Area CSS */
+.work-area {
+    padding: 100px 0;
+    background-color: #f8f8f8;
+}
+
+.work-area .section-heading h3 {
+    text-align: center;
+}
+
+.all-work {
+    margin-top: 100px;
+}
+
+.single-work {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.single-work-text {
+    background: #FFFFFF;
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.single-work-text::after {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 65px;
+    border-top: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
+    z-index: -1;
+    right: -65px;
+    top: 100px;
+
+}
+
+.single-work-text.special::after {
+    left: -65px;
+    top: 100px;
+    border-right: none;
+}
+
+.single-work-two .single-work-text::before {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 65px;
+    border-top: 2px solid #E0E0E0;
+    z-index: -1;
+    right: -65px;
+    top: 100px;
+
+}
+
+.single-work-three .single-work-text::before {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 65px;
+    border-top: 2px solid #E0E0E0;
+    border-left: 2px solid #E0E0E0;
+    z-index: -1;
+    left: -65px;
+    top: 100px;
+
+}
+
+.single-work h3 {
+    font-size: 50px;
+}
+
+.special {
+    margin-top: 100px;
+}
+
+/* End Work Area CSS */
+
+/* Start Testimonail Area CSS */
+.testimonial-area {
+    padding: 100px 0;
+    position: relative;
+}
+
+.all-testimonial {
+    position: relative;
+}
+
+.single-testimonial {
+    padding: 20px;
+}
+
+.testimonial-area .section-heading {
+    text-align: center;
+}
+
+.testimonial-contetn {
+    display: flex;
+    padding: 40px;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-contetn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 65px;
+    z-index: -1;
+    background: #FFFFFF;
+    box-shadow: 7px 5px 20px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+}
+
+.testimonial-image {
+    margin-right: 20px;
+}
+
+.testimonial-image img {
+    width: 130px !important;
+    height: 130px;
+}
+
+.testimonial-text h3 {
+    font-size: 24px;
+}
+
+.testimonial-text h3 span {
+    font-size: 16px;
+    color: #646464;
+}
+
+.icon-img {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.icon-img img {
+    width: 25px;
+    height: auto;
+}
+
+.testimonial-area .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+}
+
+.testimonial-area .owl-nav span {
+    height: 30px;
+    width: 30px;
+    color: #646464;
+    display: inline-block;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.testimonial-area .owl-nav span:hover {
+    background-color: #37806b;
+    color: #ffffff;
+}
+
+.testimonial-area .owl-next {
+    margin-left: 15px;
+}
+
+/* End Testimonail Area CSS */
+
+/* Start Blog Area CSS */
+.blog-area {
+    padding: 100px 0;
+    background-color: #f8f8f8;
+}
+
+.blog-area .section-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.blog-text {
+    margin-top: 40px;
+}
+
+.blog-image {
+    width: 100%;
+}
+
+/* End Blog Area CSS */
+
+/* Start Subscribe Area CSS */
+.subscribe-area {
+    padding: 180px 0;
+}
+
+.subscribe-text {
+    text-align: center;
+}
+
+.subscribe-text h3 {
+    font-size: 48px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    position: relative;
+}
+
+.subscribe-text h3::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 400px;
+    background-color: #C4C4C4;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.subscribe-text p {
+    margin-bottom: 45px;
+}
+
+.subscribe-area .form-control {
+    background-color: #EEEEEE;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px 0 0 0;
+    padding: 10px 15px;
+}
+
+.subscribe-area button {
+    border: none;
+    background-color: #37806b;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    border-radius: 0 0 20px 0;
+}
+
+.subscribe-area button:hover {
+    background-color: #b0855b;
+}
+
+/* End Subscribe Area CSS */
+
+/* Start Footer Area CSS */
+.footer-area {
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.footer-about img {
+    margin-bottom: 18px;
+
+}
+
+.footer-about p {
+    font-size: 15px;
+}
+
+.footer-link h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+.footer-link ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link ul li {
+    list-style: none;
+}
+
+.footer-link ul li a {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #646464;
+    font-size: 15px;
+    transition: 0.3s;
+
+}
+
+.footer-link ul li a {
+    color: #37806b;
+}
+
+
+
+.footer-link address {
+    line-height: 2.5;
+    font-size: 15px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social-link .footer-social li a {
+    background-color: #d5d5d5;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: .3s;
+
+}
+
+.footer-social-link .footer-social li a:hover {
+    background-color: #37806b;
+}
+
+.footer-bottom {
+    border-top: 1px solid #C4C4C4;
+}
+
+.footer-bottom-text a {
+    text-decoration: none;
+    color: #37806b;
+}
+
+.design {
+
+    position: absolute;
+    top: -50px;
+}
+
+.design img {
+    height: 100px;
+
+}
+
